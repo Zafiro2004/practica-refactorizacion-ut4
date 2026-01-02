@@ -10,9 +10,12 @@ public class Pedido {
         double total = 0;
         for (int i = 0; i < productos.size(); i++) {
             Producto p = productos.get(i);
-            total = total + (p.getPrecio() * p.getCantidad());
+
+            // REFACTORIZADO: Ahora el producto calcula su propio subtotal
+            total = total + p.getSubtotal();
+
             if (p.getCantidad() > 10) {
-                total = total - (total * 0.05);
+                total -= 10;
             }
         }
         if (total > 100) {

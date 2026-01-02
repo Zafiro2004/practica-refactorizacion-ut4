@@ -32,4 +32,11 @@ public class Producto {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+    /**
+     * Calcula el subtotal del producto basado en su precio y cantidad.
+     * @return El resultado de multiplicar el precio por la cantidad.
+     */
+    public double getSubtotal() {
+        return this.precio * this.cantidad;
+    }
 }
