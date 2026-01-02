@@ -10,8 +10,8 @@ public class Pedido {
         double total = 0;
         for (int i = 0; i < productos.size(); i++) {
             Producto p = productos.get(i);
-            total = total + (p.precio * p.cantidad);
-            if (p.cantidad > 10) {
+            total = total + (p.getPrecio() * p.getCantidad());
+            if (p.getCantidad() > 10) {
                 total = total - (total * 0.05);
             }
         }
