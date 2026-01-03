@@ -1,4 +1,9 @@
 package tienda;
+
+/**
+ * Representa a un cliente dentro del sistema de la tienda.
+ * Esta clase ha sido refactorizada para proteger sus datos mediante encapsulamiento.
+ */
 public class Cliente {
     private String nombre;
     private String email;
