@@ -1,4 +1,8 @@
 package tienda;
+/**
+ * Clase que representa un producto de la tienda.
+ * Almacena información sobre el nombre, precio unitario y cantidad en stock.
+ */
 public class Producto {
     private String nombre;
     private double precio;
